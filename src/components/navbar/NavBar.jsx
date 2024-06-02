@@ -2,28 +2,29 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleXmark, faBook, faStar, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importe os ícones necessários
 import logo from "/logo-oceanrank.png";
-import {NavbarContainer, NavbarLogo, DropdownIcon,NavLink,NavLinks, DropdownMenu} from "./NavBarStyles"
-
+import {NavbarContainer, NavbarLogo, DropdownIcon,NavLink,NavLinks, DropdownMenu, NavbarLogoLink} from "./NavBarStyles"
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-  
+
   return (
     <NavbarContainer
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-      <NavbarLogo src={logo} whileHover={{ scale: 1.1 }} alt="Ocean Rank Logo" /> {/* Adiciona a logo */}
+      <NavbarLogoLink href="/">
+        <NavbarLogo src={logo} whileHover={{ scale: 1.1 }} alt="Ocean Rank Logo" />
+      </NavbarLogoLink>
+      <div style={{ display: "flex", alignItems: "center" }}>
         <DropdownIcon onClick={toggleDropdown}>
           <FontAwesomeIcon icon={faHome} />
         </DropdownIcon>
       </div>
-       
+
       <NavLinks>
         <NavLink
           href="/problema"
@@ -47,7 +48,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
         >
-          <FontAwesomeIcon icon={faUserCheck} />Soluções
+          <FontAwesomeIcon icon={faUserCheck} /> Soluções
         </NavLink>
         <NavLink
           href="/rank"
@@ -59,16 +60,16 @@ const Navbar = () => {
         </NavLink>
         <DropdownMenu isOpen={isDropdownOpen}>
           <NavLink href="/problema">
-          <FontAwesomeIcon icon={faCircleXmark} /> Problema
+            <FontAwesomeIcon icon={faCircleXmark} /> Problema
           </NavLink>
           <NavLink href="/pesquisa">
-          <FontAwesomeIcon icon={faBook} />Pesquisa
+            <FontAwesomeIcon icon={faBook} /> Pesquisa
           </NavLink>
           <NavLink href="#/solucao">
             <FontAwesomeIcon icon={faUserCheck} /> Solução
           </NavLink>
           <NavLink href="/rank">
-          <FontAwesomeIcon icon={faStar} /> Rank
+            <FontAwesomeIcon icon={faStar} /> Rank
           </NavLink>
         </DropdownMenu>
       </NavLinks>

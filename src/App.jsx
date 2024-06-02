@@ -6,6 +6,7 @@ import StudiesPage from "./pages/StudiesPage";
 import SolutionPage from "./pages/SolutionPage";
 import RankPage from "./pages/RankPage";
 import NavBar from "./components/navbar/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -4,10 +4,11 @@ export const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  min-height: 70vh;
+  max-height: auto;
   padding: 20px;
   position: relative;
-  overflow: hidden;
+
 `;
 
 export const TextContainer = styled.div`
@@ -26,7 +27,7 @@ export const IframeContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    margin-top: 15em;
+    margin-top: 5em;
   }
 `;
 
