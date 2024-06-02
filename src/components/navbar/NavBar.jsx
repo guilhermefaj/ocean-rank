@@ -26,7 +26,7 @@ const Navbar = () => {
        
       <NavLinks>
         <NavLink
-          href="#problema"
+          href="/problema"
           hideOnSmallScreen
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faCircleXmark} /> Problemas
         </NavLink>
         <NavLink
-          href="#Career"
+          href="/pesquisa"
           hideOnSmallScreen
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
@@ -42,7 +42,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBook} /> Pesquisas
         </NavLink>
         <NavLink
-          href="#Academic"
+          href="/solucao"
           hideOnSmallScreen
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
@@ -50,7 +50,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faUserCheck} />Soluções
         </NavLink>
         <NavLink
-          href="#contact"
+          href="/rank"
           hideOnSmallScreen
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
@@ -58,16 +58,16 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faStar} /> Rank
         </NavLink>
         <DropdownMenu isOpen={isDropdownOpen}>
-          <NavLink href="#Career">
+          <NavLink href="/problema">
           <FontAwesomeIcon icon={faCircleXmark} /> Problema
           </NavLink>
-          <NavLink href="#about">
+          <NavLink href="/pesquisa">
           <FontAwesomeIcon icon={faBook} />Pesquisa
           </NavLink>
-          <NavLink href="#Academic">
+          <NavLink href="#/solucao">
             <FontAwesomeIcon icon={faUserCheck} /> Solução
           </NavLink>
-          <NavLink href="#contact">
+          <NavLink href="/rank">
           <FontAwesomeIcon icon={faStar} /> Rank
           </NavLink>
         </DropdownMenu>
