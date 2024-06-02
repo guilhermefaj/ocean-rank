@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styled from "styled-components";
+import placeholder from "../../public/deep-ocean.png";
 
 const StudiesPage = () => {
   const [cards, setCards] = useState([
@@ -38,81 +39,198 @@ const StudiesPage = () => {
           Explore os estudos mais recentes que ajudam a entender e promover a
           conscientização sobre a preservação dos oceanos.
         </Subtitle>
-        <StatsSection>
-          <Row>
-            {cards.map((card, index) => (
-              <Col key={index}>
-                <StatCard
-                  onClick={() => handleFlip(index)}
-                  className={card.flipped ? "flipped" : ""}
-                >
-                  <FrontSide className="front-side">
-                    <StatValue>{card.value}</StatValue>
-                    <StatLabel>{card.label}</StatLabel>
-                  </FrontSide>
-                  <BackSide className="back-side">
-                    <BackTitle>Conteúdo do estudo</BackTitle>
-                    <BackDescription>{card.description}</BackDescription>
-                  </BackSide>
-                </StatCard>
-              </Col>
-            ))}
-          </Row>
-        </StatsSection>
-        <StudyGrid>
-          <StudyCard>
-            <StudyImage src="https://via.placeholder.com/400x250?text=Study+1" />
-            <CardBody>
-              <StudyTitle>
-                Impacto da Conscientização no Ecossistema Marinho
-              </StudyTitle>
-              <StudyDescription>
-                Um estudo abrangente sobre como a conscientização pública afeta
-                a saúde e a resiliência dos ecossistemas oceânicos.
-              </StudyDescription>
-              <StudyLink href="#">Ler mais</StudyLink>
-            </CardBody>
-          </StudyCard>
-          <StudyCard>
-            <StudyImage src="https://via.placeholder.com/400x250?text=Study+2" />
-            <CardBody>
-              <StudyTitle>
-                Benefícios Econômicos da Preservação dos Oceanos
-              </StudyTitle>
-              <StudyDescription>
-                Uma análise dos benefícios econômicos diretos e indiretos da
-                conservação marinha para as comunidades costeiras e globais.
-              </StudyDescription>
-              <StudyLink href="#">Ler mais</StudyLink>
-            </CardBody>
-          </StudyCard>
-          <StudyCard>
-            <StudyImage src="https://via.placeholder.com/400x250?text=Study+2" />
-            <CardBody>
-              <StudyTitle>
-                Benefícios Econômicos da Preservação dos Oceanos
-              </StudyTitle>
-              <StudyDescription>
-                Uma análise dos benefícios econômicos diretos e indiretos da
-                conservação marinha para as comunidades costeiras e globais.
-              </StudyDescription>
-              <StudyLink href="#">Ler mais</StudyLink>
-            </CardBody>
-          </StudyCard>
-          <StudyCard>
-            <StudyImage src="https://via.placeholder.com/400x250?text=Study+2" />
-            <CardBody>
-              <StudyTitle>
-                Benefícios Econômicos da Preservação dos Oceanos
-              </StudyTitle>
-              <StudyDescription>
-                Uma análise dos benefícios econômicos diretos e indiretos da
-                conservação marinha para as comunidades costeiras e globais.
-              </StudyDescription>
-              <StudyLink href="#">Ler mais</StudyLink>
-            </CardBody>
-          </StudyCard>
-        </StudyGrid>
+
+        <section class="py-5 py-xl-8">
+          <div class="container overflow-hidden">
+            <div class="row gy-5 gy-md-6 gy-lg-0">
+              <div class="col-6 col-lg-3">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
+                  <h5 class="display-6 fw-bold m-1">120K</h5>
+                  <p class="text-secondary m-0">Happy Customers</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
+                  <h5 class="display-6 fw-bold m-1">1890+</h5>
+                  <p class="text-secondary m-0">Issues Solved</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
+                  <h5 class="display-6 fw-bold m-1">250K</h5>
+                  <p class="text-secondary m-0">Finished Projects</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
+                  <h5 class="display-6 fw-bold m-1">786+</h5>
+                  <p class="text-secondary m-0">Awwwards Winning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-3 py-md-5">
+          <div class="container overflow-hidden">
+            <div class="row gy-5">
+              <div class="col-12">
+                <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="img-wrapper position-relative bsb-hover-push">
+                      <a href="#!">
+                        <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">
+                          Sports
+                        </span>
+                        <img
+                          class="img-fluid rounded w-100 h-100 object-fit-cover"
+                          loading="lazy"
+                          src={placeholder}
+                          alt="Sports"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div>
+                      <p class="text-secondary mb-1">Nov 11, 2022</p>
+                      <h2 class="h1 mb-3">
+                        <a class="link-dark text-decoration-none" href="#!">
+                          Useful Skateboarding Tips For Beginners
+                        </a>
+                      </h2>
+                      <p class="mb-4">
+                        Learning how to skateboard can be a simultaneously
+                        exciting and terrifying experience. Explore the 20 top
+                        tips for beginner skaters.
+                      </p>
+                      <a class="btn btn-primary" href="#!" target="_self">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="img-wrapper position-relative bsb-hover-push">
+                      <a href="#!">
+                        <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">
+                          Travel
+                        </span>
+                        <img
+                          class="img-fluid rounded w-100 h-100 object-fit-cover"
+                          loading="lazy"
+                          src={placeholder}
+                          alt="Travel"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div>
+                      <p class="text-secondary mb-1">Oct 9, 2022</p>
+                      <h2 class="h1 mb-3">
+                        <a class="link-dark text-decoration-none" href="#!">
+                          Strange Facts About Hot Air Balloons
+                        </a>
+                      </h2>
+                      <p class="mb-4">
+                        You think the Wright Brothers were impressive? Hot air
+                        balloons were carrying people through the air almost a
+                        century before the Wright Brothers were even born.
+                      </p>
+                      <a class="btn btn-primary" href="#!" target="_self">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="img-wrapper position-relative bsb-hover-push">
+                      <a href="#!">
+                        <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">
+                          Photography
+                        </span>
+                        <img
+                          class="img-fluid rounded w-100 h-100 object-fit-cover"
+                          loading="lazy"
+                          src={placeholder}
+                          alt="Photography"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div>
+                      <p class="text-secondary mb-1">Sep 17, 2022</p>
+                      <h2 class="h1 mb-3">
+                        <a class="link-dark text-decoration-none" href="#!">
+                          Reasons Why Photography Is an Art Form
+                        </a>
+                      </h2>
+                      <p class="mb-4">
+                        Before the first photo was captured in the 18th century,
+                        lifelike images of what the eyes can see could only be
+                        made by talented artists.
+                      </p>
+                      <a class="btn btn-primary" href="#!" target="_self">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="img-wrapper position-relative bsb-hover-push">
+                      <a href="#!">
+                        <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">
+                          Food
+                        </span>
+                        <img
+                          class="img-fluid rounded w-100 h-100 object-fit-cover"
+                          loading="lazy"
+                          src={placeholder}
+                          alt="Food"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div>
+                      <p class="text-secondary mb-1">Aug 23, 2022</p>
+                      <h2 class="h1 mb-3">
+                        <a class="link-dark text-decoration-none" href="#!">
+                          Benefits of Having a Heavy Breakfast Every Morning
+                        </a>
+                      </h2>
+                      <p class="mb-4">
+                        Running late for work or school? "Let’s skip the
+                        breakfast!" Well, this might sound like the most ideal
+                        idea to save time when you are on the run.
+                      </p>
+                      <a class="btn btn-primary" href="#!" target="_self">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </PageContainer>
     </>
   );
@@ -137,98 +255,4 @@ const Title = styled.h1`
 const Subtitle = styled.h5`
   margin-bottom: 2rem;
   text-align: center;
-`;
-
-const StatsSection = styled.div`
-  margin-bottom: 3rem;
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-const StatCard = styled(Card)`
-  text-align: center;
-  padding: 1.5rem;
-  perspective: 1000px;
-  &.flipped .front-side {
-    transform: rotateY(-180deg);
-  }
-  &.flipped .back-side {
-    transform: rotateY(0deg);
-  }
-`;
-
-const FrontSide = styled.div`
-  backface-visibility: hidden;
-  transform: rotateY(0deg);
-  transition: transform 0.6s;
-`;
-
-const BackSide = styled.div`
-  position: absolute;
-  top: 10;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  transform: rotateY(-180deg);
-  transition: transform 0.6s;
-`;
-
-const StatValue = styled.h2`
-  font-size: 2rem;
-  font-weight: bold;
-`;
-
-const StatLabel = styled.p`
-  font-size: 1.2rem;
-`;
-
-const BackTitle = styled.h5`
-  font-weight: bold;
-`;
-
-const BackDescription = styled.p`
-  margin-bottom: 1rem;
-`;
-
-const StudyGrid = styled(Row)`
-  justify-content: center;
-`;
-
-const StudyCard = styled(Card)`
-  margin: 1rem;
-  max-width: 400px;
-`;
-
-const StudyImage = styled(Card.Img)`
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-`;
-
-const CardBody = styled(Card.Body)`
-  background-color: #f8f9fa;
-  padding: 1rem;
-`;
-
-const StudyTitle = styled(Card.Title)`
-  font-weight: bold;
-`;
-
-const StudyDescription = styled(Card.Text)`
-  margin-bottom: 1rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-`;
-
-const StudyLink = styled.a`
-  color: #007bff;
-  cursor: pointer;
-  &:hover {
-    text-decoration: none;
-    color: #0056b3;
-  }
 `;
