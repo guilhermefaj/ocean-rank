@@ -16,18 +16,23 @@ export const TextContainer = styled.div`
   z-index: 2; /* Garante que o texto esteja acima do fundo */
   display: flex;
   flex-direction: column;
-  /* Removi align-items: flex-end */
+  
 `;
 
 export const IframeContainer = styled.div`
   flex: 1;
   padding: 20px;
   z-index: 2; /* Garante que o iframe esteja acima do fundo */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15em;
+  }
 `;
 
 export const Iframe = styled.iframe`
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 600px; /* Aumenta o tamanho máximo do vídeo */
   aspect-ratio: 16/9; /* Mantém a proporção do vídeo */
   border: none; /* Remove a borda do iframe */
@@ -53,6 +58,12 @@ export const Wrapper = styled.div`
   width: 80%;
   position: relative; /* Garante que o conteúdo dentro do wrapper fique posicionado corretamente */
   z-index: 2; /* Garante que o conteúdo dentro do wrapper esteja acima do fundo */
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const StyledH1 = styled.h1`
@@ -61,14 +72,11 @@ export const StyledH1 = styled.h1`
   color: #03AED2;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Aumenta a sombra para destacar mais o texto */
   font-weight: bold;
-  
-  
 `;
 
 export const StyledH2 = styled.h2`
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  
   color: #FEEFAD;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5em;
@@ -77,7 +85,6 @@ export const StyledH2 = styled.h2`
 export const Button = styled.button`
   padding: 10px 25px;
   font-size: 16px;
-  align-self: flex-end; /* Alinha o botão à direita dentro do TextContainer */
   cursor: pointer;
   color: #03AED2;
   font-weight: bold;
