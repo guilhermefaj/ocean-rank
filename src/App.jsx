@@ -5,7 +5,7 @@ import ProblemsPage from "./pages/ProblemsPage";
 import StudiesPage from "./pages/StudiesPage";
 import SolutionPage from "./pages/SolutionPage";
 import RankPage from "./pages/RankPage";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navbar/NavBar";
 
 function App() {
   return (
