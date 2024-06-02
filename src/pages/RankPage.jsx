@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import NavBar from "../components/NavBar";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import styled from "styled-components";
 
-const RankPage = () => {
-  // Estado para armazenar os valores dos fatores de avaliação
-  const [education, setEducation] = useState(50);
-  const [engagement, setEngagement] = useState(50);
-  const [creativity, setCreativity] = useState(50);
+// Dados dos perfis do TikTok e suas pontuações
+const tiktokProfiles = [
+  { username: "oceana", score: 5000 },
+  { username: "savetheoceans", score: 4500 },
+  { username: "oceanconservancy", score: 4000 },
+  { username: "oceanheroes", score: 3500 },
+  { username: "oceancleanup", score: 3000 },
+  { username: "seashepherd", score: 2500 },
+  { username: "surfrider", score: 2000 },
+  { username: "marineconservation", score: 1500 },
+  { username: "oceanawareness", score: 1000 },
+];
 
-  // Função para calcular a pontuação total com base nos fatores de avaliação
-  const calculateScore = () => {
-    const totalScore = education * 0.3 + engagement * 0.4 + creativity * 0.3;
-    return totalScore.toFixed(2); // Arredondamento para 2 casas decimais
-  };
-
+const SolutionPage = () => {
   return (
     <>
       <NavBar />
@@ -24,52 +26,30 @@ const RankPage = () => {
           Descubra os perfis do TikTok que mais contribuem para a
           conscientização sobre a preservação dos oceanos!
         </Subtitle>
-        <FactorSection>
-          <FactorSlider>
-            <FactorLabel>Educação Ambiental</FactorLabel>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={education}
-              onChange={(e) => setEducation(e.target.value)}
-            />
-            <FactorValue>{education}</FactorValue>
-          </FactorSlider>
-          <FactorSlider>
-            <FactorLabel>Engajamento da Comunidade</FactorLabel>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={engagement}
-              onChange={(e) => setEngagement(e.target.value)}
-            />
-            <FactorValue>{engagement}</FactorValue>
-          </FactorSlider>
-          <FactorSlider>
-            <FactorLabel>Criatividade e Inovação</FactorLabel>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={creativity}
-              onChange={(e) => setCreativity(e.target.value)}
-            />
-            <FactorValue>{creativity}</FactorValue>
-          </FactorSlider>
-        </FactorSection>
-        <ScoreButton
-          onClick={() => alert(`Pontuação total: ${calculateScore()}`)}
-        >
-          Calcular Pontuação
-        </ScoreButton>
+        <RankingSection>
+          {tiktokProfiles.map((profile, index) => (
+            <RankingCard key={index}>
+              <RankingPosition>{index + 1}</RankingPosition>
+              <RankingProfile>
+                <ProfileImage
+                  src={`https://via.placeholder.com/150?text=@${profile.username}`}
+                  alt={profile.username}
+                />
+                <ProfileInfo>
+                  <ProfileUsername>@{profile.username}</ProfileUsername>
+                  <ProfileScore>{profile.score} pontos</ProfileScore>
+                </ProfileInfo>
+              </RankingProfile>
+              <FollowButton>Seguir</FollowButton>
+            </RankingCard>
+          ))}
+        </RankingSection>
       </PageContainer>
     </>
   );
 };
 
-export default RankPage;
+export default SolutionPage;
 
 const PageContainer = styled(Container)`
   margin-top: 5rem;
@@ -90,26 +70,49 @@ const Subtitle = styled.h5`
   text-align: justify;
 `;
 
-const FactorSection = styled(Row)`
+const RankingSection = styled(Row)`
   margin-top: 3rem;
 `;
 
-const FactorSlider = styled(Col)`
-  margin-bottom: 1rem;
+const RankingCard = styled(Card)`
+  margin-bottom: 2rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
 `;
 
-const FactorLabel = styled.p`
+const RankingPosition = styled.div`
+  font-size: 2rem;
   font-weight: bold;
+  margin-right: 1rem;
 `;
 
-const FactorValue = styled.span`
+const RankingProfile = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ProfileImage = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 1rem;
+`;
+
+const ProfileInfo = styled.div``;
+
+const ProfileUsername = styled.p`
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 `;
 
-const ScoreButton = styled(Button)`
-  margin-top: 2rem;
-  display: block;
+const ProfileScore = styled.p`
+  font-size: 1rem;
+`;
+
+const FollowButton = styled(Button)`
   margin-left: auto;
-  margin-right: auto;
 `;
