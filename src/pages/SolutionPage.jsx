@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import { Container, Card } from "react-bootstrap";
 import styled from "styled-components";
 import ocean from "../../public/deep-ocean.png";
@@ -7,7 +6,6 @@ import ocean from "../../public/deep-ocean.png";
 const SolutionPage = () => {
   return (
     <>
-      <NavBar />
       <PageContainer>
         <Title>Ocean Rank</Title>
         <Subtitle>

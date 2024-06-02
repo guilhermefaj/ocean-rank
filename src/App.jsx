@@ -5,12 +5,14 @@ import ProblemsPage from "./pages/ProblemsPage";
 import StudiesPage from "./pages/StudiesPage";
 import SolutionPage from "./pages/SolutionPage";
 import RankPage from "./pages/RankPage";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <GlobalStyle />
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/problema" element={<ProblemsPage />} />

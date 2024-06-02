@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -33,7 +32,6 @@ const StudiesPage = () => {
 
   return (
     <>
-      <NavBar />
       <PageContainer>
         <Title>Estudos sobre Conscientização Oceânica</Title>
         <Subtitle>

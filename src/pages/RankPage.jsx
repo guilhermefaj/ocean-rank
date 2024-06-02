@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -19,7 +18,6 @@ const tiktokProfiles = [
 const SolutionPage = () => {
   return (
     <>
-      <NavBar />
       <PageContainer>
         <Title>TikTok Ocean Heroes</Title>
         <Subtitle>

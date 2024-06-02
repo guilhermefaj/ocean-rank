@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -17,7 +16,6 @@ const images = {
 const ProblemsPage = () => {
   return (
     <>
-      <NavBar />
       <PageContainer>
         <Row>
           <Col>
