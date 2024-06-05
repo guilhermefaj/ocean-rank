@@ -46,10 +46,10 @@ export const BlurredContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../public/movies-back.jpg');
+  background-image: url('../../public/nuvens.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(8px); /* Aplica um desfoque de 8px na imagem de fundo */
+  filter: blur(3px); /* Aplica um desfoque de 8px na imagem de fundo */
   z-index: 1; /* Certifica-se de que o fundo esteja atrás do conteúdo */
 `;
 
