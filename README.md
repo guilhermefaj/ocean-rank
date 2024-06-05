@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-    <img src="../ocean-rank/public/site-print.png.png" alt="Image Example" width="400px">
+    <img src="./public/site-print.png" alt="Image Example" width="400px">
 </p>
 
 <h2 id="started">📌 Sobre</h2>
@@ -80,7 +80,7 @@ npm run dev
 
 
 
-<h2 id="colab">🤝 Collaborators</h2>
+<h2 id="colab">🤝 Colaboradores</h2>
 
 Um obrigado especial ao time de desenvolvimento do projeto.
 
@@ -88,7 +88,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/61896274?v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
+        <img src="https://media.licdn.com/dms/image/D4D03AQHMDQmHlaV-Mw/profile-displayphoto-shrink_200_200/0/1692636437627?e=1723075200&v=beta&t=kz4keoA9vTWZh3aCtG8m1oPYOqpVxULIeJ0POKafdiU" width="100px;" alt="João Brocchi Profile Picture"/><br>
         <sub>
           <b>João Brocchi</b>
         </sub>
@@ -96,7 +96,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://t.ctcdn.com.br/n7eZ74KAcU3iYwnQ89-ul9txVxc=/400x400/smart/filters:format(webp)/i490769.jpeg" width="100px;" alt="Elon Musk Picture"/><br>
+        <img src="https://avatars.githubusercontent.com/u/116542492?v=4" width="100px;" alt="Giovanna Hatten Picture"/><br>
         <sub>
           <b>Giovanna Hatten</b>
         </sub>
@@ -104,7 +104,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://avatars.githubusercontent.com/u/68969592?v=4" width="100px;" alt="Foto do Guilherme Junqueira"/><br>
         <sub>
           <b>Guilherme Junqueira</b>
         </sub>
