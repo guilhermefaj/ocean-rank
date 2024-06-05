@@ -10,6 +10,7 @@ export const Section = styled.section`
   font-weight: bold;
   padding-top: 15em;
   
+  
 
   @media screen and (max-width: 768px) {
     padding-top: 50em;

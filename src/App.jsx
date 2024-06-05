@@ -7,6 +7,7 @@ import SolutionPage from "./pages/SolutionPage";
 import RankPage from "./pages/RankPage";
 import NavBar from "./components/navbar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -14,13 +15,14 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/problema" element={<ProblemsPage />} />
-          <Route path="/pesquisa" element={<StudiesPage />} />
-          <Route path="/solucao" element={<SolutionPage />} />
-          <Route path="/rank" element={<RankPage />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/problema" element={<ProblemsPage />} />
+            <Route path="/pesquisa" element={<StudiesPage />} />
+            <Route path="/solucao" element={<SolutionPage />} />
+            <Route path="/rank" element={<RankPage />} />
+          </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

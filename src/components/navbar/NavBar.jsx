@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faCircleXmark, faBook, faStar, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importe os ícones necessários
+import { faHome, faCircleXmark, faBook, faStar,faCircleDollarToSlot, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importe os ícones necessários
 import logo from "/logo-oceanrank.png";
 import {NavbarContainer, NavbarLogo, DropdownIcon,NavLink,NavLinks, DropdownMenu, NavbarLogoLink} from "./NavBarStyles"
 const Navbar = () => {
@@ -26,6 +26,14 @@ const Navbar = () => {
       </div>
 
       <NavLinks>
+      <NavLink
+          href="/doacao"
+          hideOnSmallScreen
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
+         <FontAwesomeIcon icon={faCircleDollarToSlot} /> Contribua
+        </NavLink>
         <NavLink
           href="/problema"
           hideOnSmallScreen
@@ -34,6 +42,7 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={faCircleXmark} /> Problemas
         </NavLink>
+        
         <NavLink
           href="/pesquisa"
           hideOnSmallScreen
@@ -59,6 +68,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faStar} /> Rank
         </NavLink>
         <DropdownMenu isOpen={isDropdownOpen}>
+          <NavLink href='/doacao'>
+          <FontAwesomeIcon icon={faCircleDollarToSlot} /> Contribua
+          </NavLink>
           <NavLink href="/problema">
             <FontAwesomeIcon icon={faCircleXmark} /> Problema
           </NavLink>
