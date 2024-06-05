@@ -87,7 +87,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
 <table>
   <tr>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/joaovbrocchi">
         <img src="https://media.licdn.com/dms/image/D4D03AQHMDQmHlaV-Mw/profile-displayphoto-shrink_200_200/0/1692636437627?e=1723075200&v=beta&t=kz4keoA9vTWZh3aCtG8m1oPYOqpVxULIeJ0POKafdiU" width="100px;" alt="João Brocchi Profile Picture"/><br>
         <sub>
           <b>João Brocchi</b>
@@ -95,7 +95,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/Hattensz">
         <img src="https://avatars.githubusercontent.com/u/116542492?v=4" width="100px;" alt="Giovanna Hatten Picture"/><br>
         <sub>
           <b>Giovanna Hatten</b>
@@ -103,7 +103,7 @@ Um obrigado especial ao time de desenvolvimento do projeto.
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/guilhermefaj">
         <img src="https://avatars.githubusercontent.com/u/68969592?v=4" width="100px;" alt="Foto do Guilherme Junqueira"/><br>
         <sub>
           <b>Guilherme Junqueira</b>
