@@ -6,7 +6,7 @@ import PhoneNumber from "./phone-number/PhoneNumber";
 import DonateToUs from "./donate/DonateToUs";
 
 const FooterContainer = styled.footer`
-  background-color: #26355D;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: #fff;
   padding-top: 20px;
   flex-grow: 1; /* Para ocupar todo o espaço disponível */

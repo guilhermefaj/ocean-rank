@@ -1,41 +1,50 @@
-import { Section} from "./aboutUsSectionStyles"; // Importe o componente Card
+import { Section, Title, Container} from "./aboutUsSectionStyles";
 import { Card, CardNome, CardImg, AboutPerson, PersonInfo } from "./cardStyles";
+
+
+
 export default function AboutUsSection() {
   const alunos = [
     {
       nome: "João Brocchi",
       email: "joaobrocchiproffisional@gmail.com",
       rm: "ewewew",
-      img: "../../../../public/sea.jpg",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint." // Coloque a URL da imagem aqui se desejar
+      img: "/sea.jpg", // Use apenas o nome da imagem se estiver dentro da pasta "public"
+      about:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint."
     },
     {
       nome: "João Brocchi",
       email: "joaobrocchiproffisional@gmail.com",
       rm: "ewewew",
-      img: "../../../../public/sea.jpg",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint."
+      img: "/sea.jpg",
+      about:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint."
     },
     {
       nome: "João Brocchi",
       email: "joaobrocchiproffisional@gmail.com",
       rm: "ewewew",
-      img: "../../../../public/sea.jpg",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint."
+      img: "/sea.jpg",
+      about:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab atque harum veniam temporibus dicta doloribus consequatur aliquid quaerat unde repudiandae, quisquam beatae! Dolor obcaecati autem qui hic consectetur sint."
     }
   ];
 
   return (
-    <Section>
-      {alunos.map((aluno, index) => ( // Mapeie a lista de alunos
-        <Card key={index}>
-            <CardImg src={aluno.img}/>
+   <Container>
+    <Title>nossa equipe</Title> {/* Título da seção */}
+      <Section>
+        {alunos.map((aluno, index) => (
+          <Card key={index}>
+            <CardImg src={aluno.img} alt={aluno.nome} />
             <CardNome>{aluno.nome}</CardNome>
             <AboutPerson>{aluno.about}</AboutPerson>
-            <PersonInfo>{aluno.email}</PersonInfo>
-            <PersonInfo>{aluno.rm}</PersonInfo>
-        </Card>
-      ))}
-    </Section>
+            <PersonInfo>Email: {aluno.email}</PersonInfo>
+            <PersonInfo>RM: {aluno.rm}</PersonInfo>
+          </Card>
+        ))}
+      </Section>
+   </Container>
   );
 }

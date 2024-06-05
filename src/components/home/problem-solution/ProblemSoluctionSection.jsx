@@ -1,29 +1,22 @@
-import { Section, Container, BlurredContainer, Title, About, ReadMore, Wrapper } from "./problemSoluctionStyles";
 
-export default function ProblemSoluctionSection() {
-    return (
-        <Container>
-            <Section>
-                <BlurredContainer imageUrl="../../../../public/thunder.jpg" />
-                <Wrapper>
-                    <Title>A problem</Title>
-                    <About>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cum minus facere sint veniam fugit culpa nemo et quisquam? Quasi, ducimus deserunt nihil rem qui eius vero! In, id facilis.
-                    </About>
-                    <ReadMore >Read more</ReadMore>
-                </Wrapper>
-            </Section>
-
-            <Section>
-                <BlurredContainer imageUrl="../../../../public/sun.jpg" />
-                <Wrapper>
-                    <Title>A solution</Title>
-                    <About>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, pariatur facere fugiat nihil ab porro animi fugit, sunt optio at eligendi deserunt voluptatem ullam totam accusantium enim sapiente veniam exercitationem?
-                    </About>
-                    <ReadMore>Read more</ReadMore>
-                </Wrapper>
-            </Section>
-        </Container>
-    );
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { SectionContainer, Title, Content, Buttons, LearnMoreLink, HelpUsLink } from "./problemSoluctionStyles"
+export default function OceanPollutionSection() {
+  return (
+    <SectionContainer>
+      <Title>O Mar Precisa de Nós!</Title>
+      <Content>
+        A poluição dos oceanos é um problema global que afeta todos nós. Junte-se à nossa causa e ajude a preservar nossos preciosos ecossistemas marinhos para as futuras gerações.
+      </Content>
+      <Buttons>
+        <LearnMoreLink to="/problema">
+          Um problema <FontAwesomeIcon icon={faArrowRight} />
+        </LearnMoreLink>
+        <HelpUsLink to="/solucao">
+          Nossa solução
+        </HelpUsLink>
+      </Buttons>
+    </SectionContainer>
+  );
 }

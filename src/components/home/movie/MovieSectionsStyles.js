@@ -8,6 +8,7 @@ export const Section = styled.section`
   max-height: auto;
   padding: 20px;
   position: relative;
+ 
 
 `;
 
