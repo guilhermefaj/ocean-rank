@@ -57,7 +57,9 @@ export const Image = styled.img`
   margin-left: 20px;
 `;
 
-export const Button = styled.button`
+
+
+export const Button = styled.a`
   padding: 10px 25px;
   font-size: 16px;
   cursor: pointer;
@@ -65,9 +67,10 @@ export const Button = styled.button`
   font-weight: bold;
   background-color: #FDDE55;
   border: none;
-  border-radius: 10px; /* Bordas redondas */
+  border-radius: 5px; /* Bordas redondas */
   transition: background-color 0.3s, color 0.3s; /* Transições suaves */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para efeito 3D */
+  text-decoration: none; /* Remover sublinhado padrão de links */
 
   &:hover {
     background-color: #68D2E8; /* Cor de fundo ao passar o mouse */

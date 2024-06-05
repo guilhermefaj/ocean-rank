@@ -8,7 +8,7 @@ export default function IntroductionSection() {
           <TextContainer>
             <StyledH1>Salvar o mar é salvar a Vida</StyledH1>
             <StyledH2>Nos ajude nessa missão.</StyledH2>
-            <Button>Saiba mais</Button>
+            <Button href="/solucao">Saiba mais</Button>
           </TextContainer>
         </Wrapper>
       </Section>
