@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Image from '/public/eye-logo-oceanrank.png';
+import Image from '/public/logo/eye-logo-oceanrank.png';
 
 const LogoWrapper = styled.div`
   display: flex;

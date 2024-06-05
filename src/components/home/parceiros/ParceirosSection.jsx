@@ -2,12 +2,12 @@ import { PartnersContainer, Title, PartnersGrid, PartnerLogo } from "./parceiros
 
 
 const partners = [
-    { name: "AWS", logo: "../../../../public/aws-logo.png", link: "https://aws.amazon.com" },
-    { name: "UNESCO", logo: "../../../../public/unesco-logo.png", link: "https://www.unesco.org"},   
-    { name: "Softtek", logo: "../../../../public/softtek-logo.png", link: "https://www.softtek.com"  },
-    { name: "Select Soluções", logo: "../../../../public/select-solucoes-logo.png", link: "https://www.selectsolucoes.com.br"  },
-    { name: "O20", logo: "../../../../public/o20-logo.png", link: "https://www.o20.com" },
-    { name: "Pacto Global", logo: "../../../../public/pacto-global-logo.png", link: "https://www.unglobalcompact.org" },
+    { name: "AWS", logo: "../../../../public/parceiros/aws-logo.png", link: "https://aws.amazon.com" },
+    { name: "UNESCO", logo: "../../../../public/parceiros/unesco-logo.png", link: "https://www.unesco.org"},   
+    { name: "Softtek", logo: "../../../../public/parceiros/softtek-logo.png", link: "https://www.softtek.com"  },
+    { name: "Select Soluções", logo: "../../../../public/parceiros/select-solucoes-logo.png", link: "https://www.selectsolucoes.com.br"  },
+    { name: "O20", logo: "../../../../public/parceiros/o20-logo.png", link: "https://www.o20.com" },
+    { name: "Pacto Global", logo: "../../../../public/parceiros/pacto-global-logo.png", link: "https://www.unglobalcompact.org" },
   ];
 
 export default function ParceirosSection() {

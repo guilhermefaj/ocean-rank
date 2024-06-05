@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import styled from "styled-components";
-import ocean from "../../public/deep-ocean.png";
+import ocean from "../../public/fundos/deep-ocean.png";
 
 const SolutionPage = () => {
   return (

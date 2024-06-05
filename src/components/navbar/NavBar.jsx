@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleXmark, faBook, faStar,faCircleDollarToSlot, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importe os ícones necessários
-import logo from "/logo-oceanrank.png";
+import logo from "/public/logo/logo-oceanrank.png";
 import {NavbarContainer, NavbarLogo, DropdownIcon,NavLink,NavLinks, DropdownMenu, NavbarLogoLink} from "./NavBarStyles"
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -26,6 +26,14 @@ const Navbar = () => {
       </div>
 
       <NavLinks>
+      <NavLink
+          href="/"
+          hideOnSmallScreen
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
+         <FontAwesomeIcon icon={faHome} /> Pagina Inicial
+        </NavLink>
       <NavLink
           href="/doacao"
           hideOnSmallScreen
@@ -68,6 +76,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faStar} /> Rank
         </NavLink>
         <DropdownMenu isOpen={isDropdownOpen}>
+          <NavLink href='/'>
+          <FontAwesomeIcon icon={faHome} /> Inicio
+          </NavLink>
           <NavLink href='/doacao'>
           <FontAwesomeIcon icon={faCircleDollarToSlot} /> Contribua
           </NavLink>

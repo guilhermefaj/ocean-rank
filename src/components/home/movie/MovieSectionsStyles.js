@@ -46,7 +46,7 @@ export const BlurredContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../public/nuvens.jpg');
+  background-image: url('../../public/fundos/nuvens.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(3px); /* Aplica um desfoque de 8px na imagem de fundo */

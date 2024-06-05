@@ -32,7 +32,7 @@ export const NavLinks = styled.div`
 `;
 
 export const NavLink = styled(motion.a)`
-  color: #ffd700;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -42,7 +42,8 @@ export const NavLink = styled(motion.a)`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-color: #333;
+    border-color: #68D2E8;
+    color: #68D2E8;
   }
 
   @media screen and (max-width: 768px) {
@@ -53,7 +54,7 @@ export const NavLink = styled(motion.a)`
 
 export const DropdownIcon = styled.div`
   display: none;
-  color: #ffd700;
+  color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
 

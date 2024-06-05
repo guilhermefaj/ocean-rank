@@ -18,7 +18,7 @@ export const Card = styled.div`
 
 export const CardImg = styled.img`
   width: 100%;
-  height: auto; /* Define a altura automaticamente para manter a proporção da imagem */
+  height: 300px; /* Define a altura automaticamente para manter a proporção da imagem */
   border-radius: 15px 15px 0 0; /* Adiciona borda arredondada apenas no topo */
 `;
 

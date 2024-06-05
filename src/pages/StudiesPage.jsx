@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styled from "styled-components";
-import placeholder from "../../public/deep-ocean.png";
+import placeholder from "../../public/fundos/deep-ocean.png";
 
 const StudiesPage = () => {
   const [cards, setCards] = useState([

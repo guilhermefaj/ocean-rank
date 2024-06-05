@@ -27,7 +27,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   height: 50vh;
-  padding: 20px;
+  padding: 40px;
   
   font-weight: bold;
   
