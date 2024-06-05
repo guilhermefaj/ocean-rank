@@ -1,4 +1,5 @@
 import AboutUsSection from "../components/home/about-us/AboutUsSection";
+import DonatorsSection from "../components/home/donators/DonatorsSection";
 import IntroductionSection from "../components/home/introduction/IntroductionSection";
 import MovieSection from "../components/home/movie/MovieSection";
 import ParceirosSection from "../components/home/parceiros/ParceirosSection";
@@ -11,6 +12,7 @@ export default function HomePage() {
       <MovieSection/>
       <AboutUsSection/>
       <ProblemSoluctionSection/>
+      <DonatorsSection/>
       <ParceirosSection/>
     </div>
   )
