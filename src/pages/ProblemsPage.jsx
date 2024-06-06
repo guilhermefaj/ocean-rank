@@ -5,12 +5,13 @@ import styled from "styled-components";
 // URLs das imagens
 const images = {
   habitatDestruction:
-    "https://via.placeholder.com/600x400?text=Habitat+Destruction",
-  oceanPollution: "https://via.placeholder.com/600x400?text=Ocean+Pollution",
+    "../../public/destruicao_habitat_marinho.jpg",
+  oceanPollution:
+    "../../public/poluicao_dos_oceanos.jpg",
   biodiversityLoss:
-    "https://via.placeholder.com/600x400?text=Biodiversity+Loss",
-  economicImpact: "https://via.placeholder.com/600x400?text=Economic+Impact",
-  lackOfAwareness: "https://via.placeholder.com/600x400?text=Lack+of+Awareness",
+    "../../public/reducao_biodiversidade.jpg",
+  economicImpact:
+    "../../public/impactos_economicos.jpg"
 };
 
 const ProblemsPage = () => {
@@ -141,6 +142,7 @@ const Title = styled.h1`
   font-weight: bold;
   background: linear-gradient(120deg, #5a9adf, #ca8ed6);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 

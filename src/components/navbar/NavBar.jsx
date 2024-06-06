@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleXmark, faBook, faStar, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Importe os ícones necessários
 import logo from "/logo-oceanrank.png";
-import {NavbarContainer, NavbarLogo, DropdownIcon,NavLink,NavLinks, DropdownMenu, NavbarLogoLink} from "./NavBarStyles"
+import { NavbarContainer, NavbarLogo, DropdownIcon, NavLink, NavLinks, DropdownMenu, NavbarLogoLink } from "./NavBarStyles"
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavLink href="/pesquisa">
             <FontAwesomeIcon icon={faBook} /> Pesquisa
           </NavLink>
-          <NavLink href="#/solucao">
+          <NavLink href="/solucao">
             <FontAwesomeIcon icon={faUserCheck} /> Solução
           </NavLink>
           <NavLink href="/rank">

@@ -1,36 +1,14 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import placeholder from "../../public/deep-ocean.png";
+
+const StudiesImages = {
+  studies1: "../../public/estudo1.jpg",
+  studies2: "../../public/estudo2.jpg",
+  studies3: "../../public/estudo3.jpg",
+  studies4: "../../public/estudo4.jpg",
+};
 
 const StudiesPage = () => {
-  const [cards, setCards] = useState([
-    {
-      flipped: false,
-      value: 25,
-      label: "Estudos Publicados",
-      description: "Conteúdo do estudo",
-    },
-    {
-      flipped: false,
-      value: "$1.5M",
-      label: "Financiamento Total",
-      description: "Conteúdo do estudo",
-    },
-    {
-      flipped: false,
-      value: "200+",
-      label: "Colaboradores",
-      description: "Conteúdo do estudo",
-    },
-  ]);
-
-  const handleFlip = (index) => {
-    const newCards = [...cards];
-    newCards[index].flipped = !newCards[index].flipped;
-    setCards(newCards);
-  };
-
   return (
     <>
       <PageContainer>
@@ -47,28 +25,28 @@ const StudiesPage = () => {
                 <div class="text-center">
                   <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
                   <h5 class="display-6 fw-bold m-1">120K</h5>
-                  <p class="text-secondary m-0">Happy Customers</p>
+                  <p class="text-secondary m-0">Estudos Publicados</p>
                 </div>
               </div>
               <div class="col-6 col-lg-3">
                 <div class="text-center">
                   <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
                   <h5 class="display-6 fw-bold m-1">1890+</h5>
-                  <p class="text-secondary m-0">Issues Solved</p>
+                  <p class="text-secondary m-0">Problemas Resolvidos</p>
                 </div>
               </div>
               <div class="col-6 col-lg-3">
                 <div class="text-center">
                   <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
-                  <h5 class="display-6 fw-bold m-1">250K</h5>
-                  <p class="text-secondary m-0">Finished Projects</p>
+                  <h5 class="display-6 fw-bold m-1">181</h5>
+                  <p class="text-secondary m-0">Projetos Finalizados</p>
                 </div>
               </div>
               <div class="col-6 col-lg-3">
                 <div class="text-center">
                   <div class="d-flex align-items-center justify-content-center bg-primary mb-3 mx-auto bsb-circle"></div>
                   <h5 class="display-6 fw-bold m-1">786+</h5>
-                  <p class="text-secondary m-0">Awwwards Winning</p>
+                  <p class="text-secondary m-0">Prêmios Distribuídos</p>
                 </div>
               </div>
             </div>
@@ -81,34 +59,32 @@ const StudiesPage = () => {
                 <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
                   <div class="col-xs-12 col-md-6">
                     <div class="img-wrapper position-relative bsb-hover-push">
-                      <a href="#!">
+                      <a href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.13183" target="_blank">
                         <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">
-                          Sports
+                          Fortalecimento de Áreas Protegidas
                         </span>
                         <img
                           class="img-fluid rounded w-100 h-100 object-fit-cover"
                           loading="lazy"
-                          src={placeholder}
-                          alt="Sports"
+                          src={StudiesImages.studies1}
+                          alt="Fortalecimento de Áreas Protegidas"
                         />
                       </a>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div>
-                      <p class="text-secondary mb-1">Nov 11, 2022</p>
+                      <p class="text-secondary mb-1">Novembro, 2020</p>
                       <h2 class="h1 mb-3">
-                        <a class="link-dark text-decoration-none" href="#!">
-                          Useful Skateboarding Tips For Beginners
+                        <a class="link-dark text-decoration-none" href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.13183" target="_blank">
+                          Mapa da Conservação Marinha no Brasil
                         </a>
                       </h2>
                       <p class="mb-4">
-                        Learning how to skateboard can be a simultaneously
-                        exciting and terrifying experience. Explore the 20 top
-                        tips for beginner skaters.
+                        Esse estudo planeja formas de conservar as regiões marinhas do Brasil em grande escala e identifica áreas prioritárias.
                       </p>
-                      <a class="btn btn-primary" href="#!" target="_self">
-                        Read More
+                      <a class="btn btn-primary" href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.13183" target="_blank">
+                        Saiba Mais
                       </a>
                     </div>
                   </div>
@@ -119,34 +95,32 @@ const StudiesPage = () => {
                 <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
                   <div class="col-xs-12 col-md-6">
                     <div class="img-wrapper position-relative bsb-hover-push">
-                      <a href="#!">
+                      <a href="https://ocean.si.edu/conservation/pollution/marine-plastics" target="_blank">
                         <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">
-                          Travel
+                          Plástico nos Oceanos
                         </span>
                         <img
                           class="img-fluid rounded w-100 h-100 object-fit-cover"
                           loading="lazy"
-                          src={placeholder}
-                          alt="Travel"
+                          src={StudiesImages.studies2}
+                          alt="Plástico nos Oceanos"
                         />
                       </a>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div>
-                      <p class="text-secondary mb-1">Oct 9, 2022</p>
+                      <p class="text-secondary mb-1">Abril, 2018</p>
                       <h2 class="h1 mb-3">
-                        <a class="link-dark text-decoration-none" href="#!">
-                          Strange Facts About Hot Air Balloons
+                        <a class="link-dark text-decoration-none" href="https://ocean.si.edu/conservation/pollution/marine-plastics" target="_blank">
+                          Tudo Sobre o Plástico nos Oceanos
                         </a>
                       </h2>
                       <p class="mb-4">
-                        You think the Wright Brothers were impressive? Hot air
-                        balloons were carrying people through the air almost a
-                        century before the Wright Brothers were even born.
+                        Esse estudo fala sobre a poluição nos oceanos por plásticos. Além de mostrar possíveis soluções, é abordado como os oceanos são poluídos e como afeta o ecossistema.
                       </p>
-                      <a class="btn btn-primary" href="#!" target="_self">
-                        Read More
+                      <a class="btn btn-primary" href="https://ocean.si.edu/conservation/pollution/marine-plastics" target="_blank">
+                        Saiba Mais
                       </a>
                     </div>
                   </div>
@@ -157,34 +131,32 @@ const StudiesPage = () => {
                 <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
                   <div class="col-xs-12 col-md-6">
                     <div class="img-wrapper position-relative bsb-hover-push">
-                      <a href="#!">
+                      <a href="https://www.mdpi.com/1424-2818/4/2/224" target="_blank">
                         <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">
-                          Photography
+                          Biodiversidade Marinha
                         </span>
                         <img
                           class="img-fluid rounded w-100 h-100 object-fit-cover"
                           loading="lazy"
-                          src={placeholder}
-                          alt="Photography"
+                          src={StudiesImages.studies3}
+                          alt="Biodiversidade Marinha"
                         />
                       </a>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div>
-                      <p class="text-secondary mb-1">Sep 17, 2022</p>
+                      <p class="text-secondary mb-1">Maio, 2012</p>
                       <h2 class="h1 mb-3">
-                        <a class="link-dark text-decoration-none" href="#!">
-                          Reasons Why Photography Is an Art Form
+                        <a class="link-dark text-decoration-none" href="https://www.mdpi.com/1424-2818/4/2/224" target="_blank">
+                          A Biodiversidade Marinha e o Aquecimento Global
                         </a>
                       </h2>
                       <p class="mb-4">
-                        Before the first photo was captured in the 18th century,
-                        lifelike images of what the eyes can see could only be
-                        made by talented artists.
+                        Esse estudo explora sobre como as mudanças climáticas impoem novas ameaças à biodiversidade marinha e possíveis soluções.
                       </p>
-                      <a class="btn btn-primary" href="#!" target="_self">
-                        Read More
+                      <a class="btn btn-primary" href="https://www.mdpi.com/1424-2818/4/2/224" target="_blank">
+                        Saiba Mais
                       </a>
                     </div>
                   </div>
@@ -195,34 +167,32 @@ const StudiesPage = () => {
                 <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
                   <div class="col-xs-12 col-md-6">
                     <div class="img-wrapper position-relative bsb-hover-push">
-                      <a href="#!">
+                      <a href="https://marinedebris.noaa.gov/research/economic-impacts-marine-debris-tourism-dependent-communities" target="_blank">
                         <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">
-                          Food
+                          Impacto Econômico
                         </span>
                         <img
                           class="img-fluid rounded w-100 h-100 object-fit-cover"
                           loading="lazy"
-                          src={placeholder}
-                          alt="Food"
+                          src={StudiesImages.studies4}
+                          alt="Impacto Econômico"
                         />
                       </a>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div>
-                      <p class="text-secondary mb-1">Aug 23, 2022</p>
+                      <p class="text-secondary mb-1">Agosto, 2023</p>
                       <h2 class="h1 mb-3">
-                        <a class="link-dark text-decoration-none" href="#!">
-                          Benefits of Having a Heavy Breakfast Every Morning
+                        <a class="link-dark text-decoration-none" href="https://marinedebris.noaa.gov/research/economic-impacts-marine-debris-tourism-dependent-communities" target="_blank">
+                          O Impacto Econômico do Lixo nas Praias
                         </a>
                       </h2>
                       <p class="mb-4">
-                        Running late for work or school? "Let’s skip the
-                        breakfast!" Well, this might sound like the most ideal
-                        idea to save time when you are on the run.
+                        Este estudo examina como o lixo nas praias influencia os visitantes, afetando negativamente a economia local e os empregos.
                       </p>
-                      <a class="btn btn-primary" href="#!" target="_self">
-                        Read More
+                      <a class="btn btn-primary" href="https://marinedebris.noaa.gov/research/economic-impacts-marine-debris-tourism-dependent-communities" target="_blank">
+                        Saiba Mais
                       </a>
                     </div>
                   </div>
@@ -250,6 +220,7 @@ const Title = styled.h1`
   background: linear-gradient(120deg, #5a9adf, #ca8ed6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 `;
 
 const Subtitle = styled.h5`
