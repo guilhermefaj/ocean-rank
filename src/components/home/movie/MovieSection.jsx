@@ -6,7 +6,7 @@ export default function MovieSection() {
       <BlurredContainer />
       <Wrapper>
         <IframeContainer>
-          <Iframe src="https://www.youtube.com/embed/CRpw5ld_mIo" allowFullScreen title="Video"></Iframe>
+          <Iframe src="https://www.youtube.com/watch?v=EbjVKAytnVg&feature=youtu.be" allowFullScreen title="Video"></Iframe>
         </IframeContainer>
         <TextContainer>
           <StyledH1>Ocean Rank</StyledH1>
