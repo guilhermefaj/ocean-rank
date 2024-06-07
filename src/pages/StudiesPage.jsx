@@ -2,11 +2,11 @@ import { Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const StudiesImages = {
-  studies1: "../../public/estudo1.jpg",
-  studies2: "../../public/estudo2.jpg",
-  studies3: "../../public/estudo3.jpg",
-  studies4: "../../public/estudo4.jpg",
-};
+  studies1: "public/estudos/estudo1.jpg",
+  studies2: "public/estudos/estudo2.jpg",
+  studies3: "public/estudos/estudo3.jpg",
+  studies4: "public/estudos/estudo4.jpg",
+}
 import placeholder from "../../public/fundos/deep-ocean.png";
 
 const StudiesPage = () => {

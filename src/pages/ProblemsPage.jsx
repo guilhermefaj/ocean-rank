@@ -5,13 +5,13 @@ import styled from "styled-components";
 // URLs das imagens
 const images = {
   habitatDestruction:
-    "../../public/destruicao_habitat_marinho.jpg",
+    "public/problema/destruicao_habitat_marinho.jpg",
   oceanPollution:
-    "../../public/poluicao_dos_oceanos.jpg",
+    "public/problema/poluicao_dos_oceanos.jpg",
   biodiversityLoss:
-    "../../public/reducao_biodiversidade.jpg",
+    "public/problema/reducao_biodiversidade.jpg",
   economicImpact:
-    "../../public/impactos_economicos.jpg"
+    "public/problema/impactos_economicos.jpg"
 };
 
 const ProblemsPage = () => {

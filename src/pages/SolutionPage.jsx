@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import styled from "styled-components";
-import ocean from "../../public/fundos/deep-ocean.png";
+import ocean from "/fundos/golfinhos.jpg";
 
 const SolutionPage = () => {
   return (
@@ -137,7 +137,7 @@ const CardTitle = styled(Card.Title)`
 `;
 
 const CardSubtitle = styled(Card.Subtitle)`
-  font-size: 1.2rem;
+  font-size:1.2rem;
   font-weight: bold;
   color: #666;
   margin-bottom: 1rem;
@@ -146,3 +146,4 @@ const CardSubtitle = styled(Card.Subtitle)`
 const CardContent = styled(Card.Text)`
   margin-bottom: 1rem;
 `;
+
