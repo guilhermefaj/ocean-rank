@@ -71,14 +71,18 @@ export const DropdownMenu = styled.div`
   flex-direction: column;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background-color: #333;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
   ${NavLink} {
     margin: 0.2rem 0;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
   }
 
   ${(props) => props.isOpen && `display: flex;`}
