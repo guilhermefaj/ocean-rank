@@ -54,7 +54,7 @@ Como clonar o projeto
 ```bash
 git clone https://github.com/guilhermefaj/ocean-rank
 ```
-
+a
 <h3>Iniciando</h3>
 
 Como iniciar o projeto
