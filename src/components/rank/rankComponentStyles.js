@@ -1,27 +1,14 @@
 import styled from 'styled-components';
 import { FaUserFriends } from 'react-icons/fa';
 
-export const  Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #87CEEB 25%, #00BFFF 75%);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  padding: 2rem;
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+export const Container = styled.div`
+  
 `;
 
 // Estilos para o título
 
 // Estilos para a lista de contas
-export const  RankList = styled.ul`
+export const RankList = styled.ul`
   list-style: none;
   padding: 0;
   display: grid;
@@ -30,7 +17,7 @@ export const  RankList = styled.ul`
 `;
 
 // Estilos para cada item do ranking
-export const  RankItem = styled.li`
+export const RankItem = styled.li`
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1.5rem;
   border-radius: 10px;
@@ -46,7 +33,7 @@ export const  RankItem = styled.li`
 `;
 
 // Estilos para a foto de perfil
-export const  ProfilePic = styled.img`
+export const ProfilePic = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -55,7 +42,7 @@ export const  ProfilePic = styled.img`
 `;
 
 // Estilos para o nome do usuário
-export const  Name = styled.h2`
+export const Name = styled.h2`
   margin: 0;
   font-size: 1.2rem;
   color: #2c3e50;
@@ -64,21 +51,23 @@ export const  Name = styled.h2`
 `;
 
 // Estilos para o número de seguidores
-export const  Followers = styled.p`
+export const Followers = styled.p`
   margin: 0;
   color: #777;
   display: flex;
   align-items: center;
 `;
 
-export const  FollowersIcon = styled(FaUserFriends)`
+export const FollowersIcon = styled(FaUserFriends)`
   margin-right: 0.5rem;
   color: #777;
 `;
 
 // Estilos para o número do rank
-export const  RankNumber = styled.span`
+export const RankNumber = styled.span`
   font-size: 1.2rem;
   color: #ff6b6b;
   margin-right: 0.5rem;
 `;
+
+// Remover sublinhado dos links
