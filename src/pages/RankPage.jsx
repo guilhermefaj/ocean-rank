@@ -12,6 +12,7 @@ const Container = styled.div`
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   padding: 2rem;
+  text-decoration: none;
 
   @keyframes gradientBG {
     0% { background-position: 0% 50%; }
@@ -30,6 +31,7 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  text-decoration: none;
 `;
 
 export default function RankPage() {

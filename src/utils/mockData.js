@@ -49,6 +49,27 @@ const mockData = [
     tiktokProfile: "https://www.tiktok.com/@emmawatson"
   },
   {
+    id: "username7",
+    name: "Emma Watson",
+    followers: 30000000,
+    profilePic: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Emma_Watson_2013.jpg/220px-Emma_Watson_2013.jpg",
+    tiktokProfile: "https://www.tiktok.com/@emmawatson"
+  },
+  {
+    id: "username7",
+    name: "Emma Watson",
+    followers: 30000000,
+    profilePic: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Emma_Watson_2013.jpg/220px-Emma_Watson_2013.jpg",
+    tiktokProfile: "https://www.tiktok.com/@emmawatson"
+  },
+  {
+    id: "username7",
+    name: "Emma Watson",
+    followers: 30000000,
+    profilePic: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Emma_Watson_2013.jpg/220px-Emma_Watson_2013.jpg",
+    tiktokProfile: "https://www.tiktok.com/@emmawatson"
+  },
+  {
     id: "username8",
     name: "Arnold Schwarzenegger",
     followers: 15000000,
